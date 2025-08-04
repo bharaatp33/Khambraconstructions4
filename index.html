@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Khambra Developers & Construction</title>
+<meta name="description" content="Khambra Developers & Construction - Building Australia's and India's future with 35+ years of construction and engineering excellence." />
+<meta name="author" content="Khambra Developers" />
+<style>
+  /* Reset */
+  *, *::before, *::after {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  a {
+    color: #b8860b;
+    text-decoration: none;
+  }
+  a:hover, a:focus {
+    color: #daa520;
+    outline: none;
+  }
+
+  /* Header */
+  header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    z-index: 9999;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  header.scrolled {
+    background-color: #fafafa;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  .logo {
+    font-weight: 800;
+    font-size: 1.9rem;
+    letter-spacing: 2px;
+    color: #b8860b;
+    user-select: none;
+  }
+  nav {
+    display: flex;
+    gap: 2.5rem;
+  }
+  nav a {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    position: relative;
+  }
+  nav a.active, nav a:hover, nav a:focus {
+    color: #daa520;
+  }
+  nav a.active::after,
+  nav a:hover::after,
+  nav a:focus::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #daa520;
+    border-radius: 3px;
+  }
+
+  /* Hamburger for mobile */
+  #hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+  }
+  #hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #b8860b;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  #hamburger.open span:nth-child(1) {
